@@ -1,9 +1,15 @@
-// I literally cannot distinguish these two shades of black
+// colors
 $black: #1E1713;
-$blackTwo: #161515;
+$black-two: #161515;
 
 $white: #FFFFFF;
 
-$primaryColor: #1A315C;
-$secondaryColor: #0CADC0;
-$primaryBackground: #CCEDFB;
+$primary-color: #1A315C;
+$secondary-color: #0CADC0;
+$primary-background: #CCEDFB;
+
+$secondary-background: #21404f;
+
+// design sizes
+$shadow-size: 20px; // size of box shadows
+$overflow-amount: 50vh; // how much things overflow into the header

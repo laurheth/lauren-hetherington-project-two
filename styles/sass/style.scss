@@ -3,21 +3,5 @@
 @import 'mixins';
 @import 'general';
 @import 'header';
-
-
-img {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-}
-
-.bleed-left img {
-    object-position:left;
-}
-
-
-
-
-
-
+@import 'sections';
 @import 'footer';

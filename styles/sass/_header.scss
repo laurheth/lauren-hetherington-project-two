@@ -11,8 +11,6 @@
     background: url(../assets/contact-header.jpg);
 }
 
-$overflow-amount: 50vh;
-
 header {
     padding-top: 30px;
     height: 90vh;
@@ -39,7 +37,7 @@ header nav ul {
 
 header nav ul a {
     padding: 5px 30px;
-    color: $black;
+    color: $black-two;
 }
 
 header nav ul li:last-of-type a {
@@ -50,6 +48,7 @@ header nav ul li:last-of-type a {
     @include font-size(30);
     @include line-height(24);
     @include letter-spacing(1.7);
+    color: $black;
 }
 
 h1 {
