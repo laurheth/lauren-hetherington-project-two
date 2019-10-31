@@ -11,10 +11,18 @@
     background: url(../assets/contact-header.jpg);
 }
 
+$overflow-amount: 50vh;
+
 header {
+    padding-top: 30px;
     height: 90vh;
     background-attachment: fixed;
     background-size: cover;
+    padding-bottom: $overflow-amount;
+}
+
+header .wrapper {
+    height: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -30,6 +38,32 @@ header nav ul {
 }
 
 header nav ul a {
-    padding: 5px 10px;
+    padding: 5px 30px;
     color: $black;
+}
+
+header nav ul li:last-of-type a {
+    padding-right: 0;
+}
+
+.logo {
+    @include font-size(30);
+    @include line-height(24);
+    @include letter-spacing(1.7);
+}
+
+h1 {
+    margin: auto 0;
+    width: 50%;
+}
+
+.home-header h1 {
+    @include font-size(58);
+    @include line-height(68);
+}
+
+.overflow-header.img-container {
+    // position: absolute;
+    margin-top: -$overflow-amount;
+    width: 60%;
 }

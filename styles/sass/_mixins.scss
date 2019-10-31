@@ -3,3 +3,13 @@
     font-size: $size-value * 1px;
     font-size: ($size-value/10) * 1rem; // assumes base font of 10 px
 }
+
+@mixin line-height($line-height) {
+    line-height: $line-height * 1px;
+    line-height: ($line-height/10) * 1rem;
+}
+
+@mixin letter-spacing($letter-spacing) {
+    letter-spacing: $letter-spacing * 1px;
+    letter-spacing: ($letter-spacing/10) * 1rem;
+}
