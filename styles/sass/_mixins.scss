@@ -1,5 +1,5 @@
 
-@mixin font-size($sizeValue) {
-    font-size: $sizeValue * 1px;
-    font-size: ($sizeValue/10) * 1rem; // assumes base font of 10 px
+@mixin font-size($size-value) {
+    font-size: $size-value * 1px;
+    font-size: ($size-value/10) * 1rem; // assumes base font of 10 px
 }

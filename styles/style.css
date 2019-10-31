@@ -185,12 +185,82 @@ html {
 }
 
 body {
+  font-family: "Lato", sans-serif;
+  background: #CCEDFB;
   font-size: 20px;
   font-size: 2rem;
+}
+
+nav {
+  font-weight: bold;
+}
+
+h1, h2, h3, .button, button {
+  font-family: "Pacifico", cursive;
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 .wrapper {
   width: 80%;
   max-width: 1280px;
   margin: 0 auto;
+}
+
+.home-header {
+  background: url(../assets/header-home.jpg);
+}
+
+.blog-header {
+  background: url(../assets/blog-header.jpg);
+}
+
+.contact-header {
+  background: url(../assets/contact-header.jpg);
+}
+
+header {
+  height: 90vh;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+header .top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul a {
+  padding: 5px 10px;
+  color: #1E1713;
+}
+
+footer {
+  background: #1E1713;
+  color: #FFFFFF;
+  text-align: center;
 }

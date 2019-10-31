@@ -4,8 +4,23 @@ html {
     font-size: 62.5%;
 }
 
+// font-family: 'Lato', sans-serif;
+// font-family: 'Pacifico', cursive;
+
 body {
+    font-family: 'Lato', sans-serif;
+    background: $primaryBackground;
+
     @include font-size(20);
+}
+
+nav {
+    font-weight: bold;
+}
+
+h1,h2,h3,.button,button {
+    font-family: 'Pacifico', cursive;
+    font-weight: normal;
 }
 
 // stripping styles
