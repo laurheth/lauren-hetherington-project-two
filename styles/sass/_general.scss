@@ -1,0 +1,35 @@
+// base fonts
+html {
+    // I prefer doing math with 10s to 20s...
+    font-size: 62.5%;
+}
+
+body {
+    @include font-size(20);
+}
+
+// stripping styles
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+// wrapper
+.wrapper {
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
