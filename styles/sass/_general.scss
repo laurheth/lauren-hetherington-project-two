@@ -51,7 +51,7 @@ nav {
     text-transform: uppercase;
 }
 
-h1,h2,h3,.button,button {
+h1,h2,h3 {
     font-family: 'Pacifico', cursive;
     font-weight: normal;
     color: $primary-color;
@@ -69,9 +69,43 @@ img {
 }
 
 .left-shadow {
-    box-shadow: -$shadow-size $shadow-size $secondary-background;
+    box-shadow: -$shadow-size $shadow-size $secondary-color;
 }
 
 .right-shadow {
-    box-shadow: $shadow-size $shadow-size $secondary-background;
+    box-shadow: $shadow-size $shadow-size $secondary-color;
+}
+
+.flex-row, .flex-column {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+// buttons, and things that resemble buttons without actually being buttons
+.dark-button, .light-button, button {
+    font-family: 'Pacifico', cursive;
+    font-weight: normal;
+    @include font-size(27);
+    @include line-height(32);
+    @include letter-spacing(1.4);
+    border: none;
+    padding: 10px 40px;
+    display: block;
+    text-transform: lowercase;
+}
+
+.dark-button {
+    background: $primary-color;
+    color: $white;
+}
+
+.light-button {
+    background: $light-button-color;
+    color: $black;
 }

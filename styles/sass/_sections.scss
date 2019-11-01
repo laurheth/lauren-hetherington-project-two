@@ -1,3 +1,82 @@
 section {
     padding: 100px 0;
 }
+
+.gallery, .links-two {
+    background: $secondary-background;
+}
+
+.techniques h2, .links h2, .search h2 {
+    @include font-size(43);
+    @include line-height(58);
+    @include letter-spacing(2.7);
+}
+
+.techniques .content {
+    width: 75%;
+    padding-right: 10%;
+    align-items: flex-start;
+}
+
+.techniques .content p {
+    margin: 20px 0;
+}
+
+.techniques .img-container {
+    width: 25%;
+}
+
+.gallery ul .img-container {
+    width: calc((100% - 80px) / 3);
+    margin: 0 40px 0 0;
+}
+
+.gallery ul .img-container:last-of-type {
+    margin-right: 0;
+}
+
+.links {
+    padding-bottom: 70px;
+}
+
+.links ul {
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.links li {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.links li .icon-holder {
+    background: $secondary-color;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.links li i {
+    color: $white;
+    @include font-size(30);
+}
+
+.links li p {
+    margin-top: 20px;
+}
+
+.banner {
+    background-image: url(../assets/banner.jpg);
+    height: 60vh;
+}
+
+.search p {
+    margin: 10px 0 60px 0;
+}
