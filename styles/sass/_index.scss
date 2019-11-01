@@ -1,0 +1,140 @@
+// Styles for sections specific to the index
+
+.techniques {
+    .content {
+        width: 75%;
+        padding-right: 10%;
+        align-items: flex-start;
+        p {
+            margin: 20px 0;
+        }
+    }
+    .img-container {
+        width: 25%;
+    }
+}
+
+.gallery {
+    ul {
+        .img-container {
+            width: calc((100% - 80px) / 3);
+            margin: 0 40px 0 0;
+        }
+        .img-container:last-of-type {
+            margin-right: 0;
+        }
+    }
+    
+}
+
+.links {
+    padding-bottom: 70px;
+    ul {
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    li {
+        width: 50%;
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 30px;
+        .icon-holder {
+            background: $secondary-color;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            flex-shrink: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 20px;
+        }
+        i {
+            color: $white;
+            @include font-size(30);
+        }
+        p {
+            margin-top: 20px;
+        }
+    }
+}
+
+.links-two {
+    padding: 0;
+
+    .flex-row {
+        justify-content: space-between;
+        align-content: space-between;
+        align-items: stretch;
+        flex-wrap: nowrap;
+    }
+    h2 {
+        color: $white;
+    }
+
+    .left-content {
+        align-items: flex-end;
+    }
+
+    .right-content {
+        align-items: flex-start;
+    }
+
+    .img-container {
+        width: calc(50vw - #{$links-two-margin-horizontal});
+    }
+
+    .left-content, .right-content {
+        width: calc(100% - 50vw - #{$links-two-margin-horizontal});
+    }
+
+    .img-container,
+    .bleed-right-wrapper,
+    .bleed-left-wrapper {
+        height: 100%;
+    }
+
+    img {
+        object-fit: cover;
+        margin-bottom: -$section-overflow;
+    }
+    .first-row img {
+        margin-top: -$section-overflow;
+        margin-bottom: 0;
+    }
+
+    .second-row {
+        flex-direction: row-reverse;
+        margin-top: 2 * $links-two-margin-vertical;
+    }
+
+    .bleed-right {
+        order: 1;
+        align-self: flex-end;
+    }
+
+    .flex-column {
+        height: 100%;
+    }
+
+    .right-half-wrapper {
+        align-items: flex-start;
+    }
+
+    .left-half-wrapper {
+        align-items: flex-end;
+    }
+
+    p {
+        margin-top: 20px;
+    }
+}
+
+.banner {
+    background-image: url(../assets/banner.jpg);
+    height: 60vh;
+}
+
+.search p {
+    margin: 10px 0 60px 0;
+}

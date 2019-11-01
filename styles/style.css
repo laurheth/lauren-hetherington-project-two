@@ -410,11 +410,9 @@ section {
   padding-right: 10%;
   align-items: flex-start;
 }
-
 .techniques .content p {
   margin: 20px 0;
 }
-
 .techniques .img-container {
   width: 25%;
 }
@@ -423,7 +421,6 @@ section {
   width: calc((100% - 80px) / 3);
   margin: 0 40px 0 0;
 }
-
 .gallery ul .img-container:last-of-type {
   margin-right: 0;
 }
@@ -431,19 +428,16 @@ section {
 .links {
   padding-bottom: 70px;
 }
-
 .links ul {
   justify-content: space-between;
   align-items: flex-start;
 }
-
 .links li {
   width: 50%;
   display: flex;
   align-items: flex-start;
   margin-bottom: 30px;
 }
-
 .links li .icon-holder {
   background: #0CADC0;
   border-radius: 50%;
@@ -455,13 +449,11 @@ section {
   align-items: center;
   margin-right: 20px;
 }
-
 .links li i {
   color: #FFFFFF;
   font-size: 30px;
   font-size: 3rem;
 }
-
 .links li p {
   margin-top: 20px;
 }
