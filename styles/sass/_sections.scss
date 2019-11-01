@@ -4,12 +4,19 @@ section {
 
 .gallery, .links-two {
     background: $secondary-background;
+    color: $white;
 }
 
 .techniques h2, .links h2, .search h2 {
     @include font-size(43);
     @include line-height(58);
     @include letter-spacing(2.7);
+}
+
+.links-two h2 {
+    @include font-size(40);
+    @include line-height(58);
+    @include letter-spacing(2.5);
 }
 
 .techniques .content {
@@ -70,6 +77,77 @@ section {
 
 .links li p {
     margin-top: 20px;
+}
+
+.links-two {
+    padding: 0;
+
+    .flex-row {
+        justify-content: space-between;
+        align-content: space-between;
+        align-items: stretch;
+        flex-wrap: nowrap;
+    }
+    h2 {
+        color: $white;
+    }
+
+    .left-content {
+        align-items: flex-end;
+    }
+
+    .right-content {
+        align-items: flex-start;
+    }
+
+    .img-container {
+        width: calc(50vw - #{$links-two-margin-horizontal});
+    }
+
+    .left-content, .right-content {
+        width: calc(100% - 50vw - #{$links-two-margin-horizontal});
+    }
+
+    .img-container,
+    .bleed-right-wrapper,
+    .bleed-left-wrapper {
+        height: 100%;
+    }
+
+    img {
+        object-fit: cover;
+        margin-bottom: -$section-overflow;
+    }
+    .first-row img {
+        margin-top: -$section-overflow;
+        margin-bottom: 0;
+    }
+
+    .second-row {
+        flex-direction: row-reverse;
+        margin-top: 2 * $links-two-margin-vertical;
+    }
+
+    .bleed-right {
+        order: 1;
+        align-self: flex-end;
+    }
+
+    .flex-column {
+        height: 100%;
+    }
+
+    .right-half-wrapper {
+        align-items: flex-start;
+    }
+
+    .left-half-wrapper {
+        align-items: flex-end;
+    }
+
+    p {
+        margin-top: 20px;
+    }
 }
 
 .banner {

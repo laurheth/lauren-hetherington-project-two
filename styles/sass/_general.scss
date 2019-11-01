@@ -30,6 +30,20 @@ a {
     margin: 0 auto;
 }
 
+.bleed-left-wrapper, .bleed-right-wrapper {
+    width: 90%;
+    max-width: calc(1280px + 10%);
+}
+
+// half-wrapper
+.bleed-right-wrapper {
+    margin: 0 0 0 auto;
+}
+
+.bleed-left-wrapper {
+    margin: 0 auto 0 0;
+}
+
 // font-family: 'Lato', sans-serif;
 // font-family: 'Pacifico', cursive;
 
