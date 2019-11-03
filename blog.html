@@ -34,7 +34,10 @@
                 <img src="assets/blog-post-image.jpg" alt="" class="right-shadow">
             </div>
             <div class="blog-subset post">
-                <h2>Test test</h2>
+                <h2>Our new collection</h2>
+                <p class='time'>
+                    <time datetime="2019-10-05">Monday, October 5th, 2019</time> by Saron
+                </p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quisquam harum molestias fugit a ipsam cumque quae velit veniam ut, nesciunt fugiat excepturi quas dolores eveniet. Unde placeat reiciendis iste!</p>
                 <p>Quaerat dolore, accusamus earum dolorem, vitae blanditiis ullam illum ipsa eligendi maiores iste necessitatibus amet minima architecto dolor aut corporis. Laudantium dolorum eaque adipisci, nemo perferendis blanditiis. Deserunt, voluptatem ipsa.</p>
                 <p>Voluptate repudiandae nobis similique iure cupiditate, officiis necessitatibus soluta. Quia sit consequatur aliquam odio, ut maiores voluptates rerum eligendi magni maxime veniam voluptatum in debitis! Dolor quidem commodi iusto id.</p>
@@ -42,13 +45,51 @@
             </div>
         </article>
         <div class="wrapper">
-            <div class="blog-subset comments">
-                <h2>Test</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia facilis id fugit aperiam temporibus commodi at laborum aliquam, doloribus aliquid nulla repudiandae. Nobis temporibus eius, dolorem odit ad maxime distinctio.</p>
-                <p>Sequi necessitatibus hic fugiat ut non quasi porro aut neque, odit, error, distinctio et fuga officiis quia aliquid assumenda culpa. Odit eos, consectetur necessitatibus corporis dicta iste molestiae illum et.</p>
-                <p>Illo vitae id rerum perspiciatis alias, odio voluptates dolores consequuntur animi, doloremque delectus nesciunt blanditiis facilis natus molestias error, iusto nostrum exercitationem voluptatibus pariatur magni! Ullam amet magnam alias quibusdam?</p>
-                <p>Nisi labore atque cumque expedita, temporibus assumenda rerum dolorum voluptas earum fugiat in a praesentium obcaecati rem ab sint eveniet architecto mollitia libero velit nulla quos natus? Temporibus, soluta beatae?</p>
-            </div>
+            <section class="blog-subset comments">
+                <h2>Comments:</h2>
+                <ul>
+                    <li>
+                        <div class="img-container">
+                            <img src="https://placekitten.com/100/100" alt="">
+                        </div>
+                        <div>
+                            <p class="time">
+                                <time datetime="2019-12-09">Tuesday December 9th, 2019</time> by Louise
+                            </p>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam numquam explicabo quia, amet iure accusamus qui? Quae suscipit nesciunt aut. Est error nam tempora beatae repellat, nobis perferendis quae explicabo.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="img-container">
+                            <img src="https://placekitten.com/100/100" alt="">
+                        </div>
+                        <div>
+                            <p class="time">
+                                <time datetime="2019-12-10">Wednesday December 10th, 2019</time> by JP
+                            </p>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nemo modi omnis, nobis nisi officiis non quasi, mollitia officia corrupti nesciunt dolore est voluptas facilis illum explicabo libero nostrum! Aperiam.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <form action="#">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name">
+
+                    <label for="email">Email address</label>
+                    <input type="email" name="email" id="email">
+
+                    <label for="comment">Comment</label>
+                    <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+
+                    <button class="dark-button" type="submit">
+                        post comment
+                    </button>
+                </form>
+            </section>
         </div>
     </main>
     <footer>

@@ -555,6 +555,9 @@ article {
   width: calc(50% - 640px + 810px);
   min-width: calc(10% + 810px);
 }
+article .time {
+  color: #CCEDFB;
+}
 article .blog-subset {
   margin: 0 0 0 auto;
   color: #FFFFFF;
@@ -565,6 +568,25 @@ article .blog-subset h2 {
 article .post {
   padding: 40px 0;
   margin-bottom: 50px;
+}
+
+.comments {
+  color: #1E1713;
+}
+.comments .time {
+  color: #1A315C;
+}
+.comments h2 {
+  color: #1E1713;
+}
+.comments li {
+  display: flex;
+  align-items: flex-start;
+}
+.comments li .img-container {
+  flex-shrink: 0;
+  width: 90px;
+  height: 90px;
 }
 
 footer {

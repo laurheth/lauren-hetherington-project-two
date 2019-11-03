@@ -14,6 +14,9 @@ article {
     background: $secondary-background;
     width: calc(50% - 640px + #{$blog-width});
     min-width: calc(10% + #{$blog-width});
+    .time {
+        color: $primary-background;
+    }
     .blog-subset {
         margin: 0 0 0 auto;
         color: $white;
@@ -25,5 +28,24 @@ article {
     .post {
         padding: 40px 0;
         margin-bottom: 50px;
+    }
+}
+
+.comments {
+    color: $black;
+    .time {
+        color: $primary-color;
+    }
+    h2 {
+        color: $black;
+    }
+    li {
+        display: flex;
+        align-items: flex-start;
+        .img-container {
+            flex-shrink: 0;
+            width: 90px;
+            height: 90px;
+        }
     }
 }
