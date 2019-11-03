@@ -1,0 +1,29 @@
+// Blog specific styles
+article.overlap-header {
+    margin-top: -$overflow-small;
+}
+
+$blog-width: 810px;
+
+.blog-subset {
+    width: $blog-width;
+    margin-left: 0;
+}
+
+article {
+    background: $secondary-background;
+    width: calc(50% - 640px + #{$blog-width});
+    min-width: calc(10% + #{$blog-width});
+    .blog-subset {
+        margin: 0 0 0 auto;
+        color: $white;
+
+        h2 {
+            color: $white;
+        }
+    }
+    .post {
+        padding: 40px 0;
+        margin-bottom: 50px;
+    }
+}

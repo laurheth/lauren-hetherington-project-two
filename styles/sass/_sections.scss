@@ -15,9 +15,13 @@ section {
     @include letter-spacing(2.7);
 }
 
-.links-two h2 {
+.links-two h2, .post h2 {
     @include font-size(40);
     @include line-height(58);
     @include letter-spacing(2.5);
 }
 
+.comments h2 {
+    @include font-size(40);
+    @include letter-spacing(4.3);
+}

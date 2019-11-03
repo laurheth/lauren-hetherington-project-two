@@ -324,6 +324,8 @@ header {
   padding-top: 30px;
   height: 90vh;
   padding-bottom: 50vh;
+  position: relative;
+  z-index: -20;
 }
 header .wrapper {
   height: 100%;
@@ -344,6 +346,11 @@ header nav ul a {
 }
 header nav ul li:last-of-type a {
   padding-right: 0;
+}
+
+.blog-header, .contact-header {
+  height: 500px;
+  padding-bottom: 200px;
 }
 
 .logo {
@@ -398,13 +405,20 @@ section {
   letter-spacing: 0.27rem;
 }
 
-.links-two h2 {
+.links-two h2, .post h2 {
   font-size: 40px;
   font-size: 4rem;
   line-height: 58px;
   line-height: 5.8rem;
   letter-spacing: 2.5px;
   letter-spacing: 0.25rem;
+}
+
+.comments h2 {
+  font-size: 40px;
+  font-size: 4rem;
+  letter-spacing: 4.3px;
+  letter-spacing: 0.43rem;
 }
 
 .techniques .content {
@@ -525,6 +539,32 @@ section {
 
 .search p {
   margin: 10px 0 60px 0;
+}
+
+article.overlap-header {
+  margin-top: -25vh;
+}
+
+.blog-subset {
+  width: 810px;
+  margin-left: 0;
+}
+
+article {
+  background: #21404f;
+  width: calc(50% - 640px + 810px);
+  min-width: calc(10% + 810px);
+}
+article .blog-subset {
+  margin: 0 0 0 auto;
+  color: #FFFFFF;
+}
+article .blog-subset h2 {
+  color: #FFFFFF;
+}
+article .post {
+  padding: 40px 0;
+  margin-bottom: 50px;
 }
 
 footer {
