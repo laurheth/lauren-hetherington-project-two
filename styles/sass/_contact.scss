@@ -3,7 +3,7 @@
     max-width: $blog-width;
     margin-left: 0;
     background: $secondary-background;
-    margin: -$overflow-small -30px 30px -30px;
+    margin: -$overflow-small -30px 120px -30px;
     padding: 30px;
     input, textarea {
         color: $white;
@@ -13,9 +13,21 @@
 
 address {
     font-style: normal;
-    margin-left: 30px + $shadow-size;
+    // width: 100%;
+    width: calc(100% - #{$blog-width + 200px});
+    max-width: 300px;
+    margin-top: 90px;
+    i {
+        color: $primary-color;
+        @include font-size(25);
+        margin-right: 20px;
+    }
+    div {
+        margin-bottom: 20px;
+    }
 }
 
 .contact-flex {
     display: flex;
+    justify-content: space-between;
 }
