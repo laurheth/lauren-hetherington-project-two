@@ -687,6 +687,28 @@ article .post p.time {
   margin-bottom: 0;
 }
 
+.contact-form {
+  width: 100%;
+  max-width: 810px;
+  margin-left: 0;
+  background: #21404f;
+  margin: -25vh -30px 30px -30px;
+  padding: 30px;
+  flex-shrink: 0;
+}
+.contact-form input, .contact-form textarea {
+  color: #FFFFFF;
+}
+
+address {
+  font-style: normal;
+  margin-left: 50px;
+}
+
+.contact-flex {
+  display: flex;
+}
+
 footer {
   background: #1E1713;
   color: #FFFFFF;
