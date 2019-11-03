@@ -270,6 +270,14 @@ img {
   box-shadow: 20px 20px #0CADC0;
 }
 
+.double-shadow {
+  box-shadow: -20px 20px #0CADC0, 20px 20px #0CADC0;
+}
+
+.double-shadow-dark {
+  box-shadow: -20px 20px #21404f, 20px 20px #21404f;
+}
+
 .flex-row, .flex-column {
   display: flex;
   flex-wrap: wrap;
@@ -304,6 +312,10 @@ img {
 .light-button {
   background: #c6d9fb;
   color: #1E1713;
+}
+
+main {
+  position: relative;
 }
 
 .home-header {
@@ -580,6 +592,9 @@ article.overlap-header {
   width: 810px;
   margin-left: 0;
 }
+.blog-subset p {
+  padding-right: 60px;
+}
 
 article {
   background: #21404f;
@@ -597,12 +612,50 @@ article .blog-subset h2 {
   color: #FFFFFF;
 }
 article .post {
-  padding: 40px 0;
+  padding: 80px 0;
   margin-bottom: 50px;
+}
+article .post p {
+  margin: 30px 0;
+}
+article .post p.time {
+  margin-top: 10px;
+}
+
+.blog-sidebar {
+  position: absolute;
+  right: 0;
+  top: 300px;
+  width: calc(90% - 850px);
+  max-width: 350px;
+  background: #21404f;
+  color: #FFFFFF;
+}
+.blog-sidebar h2, .blog-sidebar h3 {
+  font-size: 35px;
+  font-size: 3.5rem;
+  letter-spacing: 2.9px;
+  letter-spacing: 0.29rem;
+  color: #FFFFFF;
+  margin-top: 30px;
+}
+.blog-sidebar h3 {
+  margin-top: 60px;
+}
+.blog-sidebar p {
+  margin-top: 10px;
+}
+.blog-sidebar ul {
+  margin-top: 10px;
+  padding-left: 40px;
+}
+.blog-sidebar ul li {
+  list-style: disc;
 }
 
 .comments {
   color: #1E1713;
+  padding-top: 40px;
 }
 .comments .time {
   color: #1A315C;
@@ -610,14 +663,28 @@ article .post {
 .comments h2 {
   color: #1E1713;
 }
-.comments li {
+.comments ul {
+  margin: 60px 0;
+}
+.comments ul li {
   display: flex;
   align-items: flex-start;
+  margin: 120px 0;
 }
-.comments li .img-container {
+.comments ul li .img-container {
   flex-shrink: 0;
   width: 90px;
   height: 90px;
+  margin-right: 40px;
+}
+.comments ul li p {
+  margin-bottom: 10px;
+}
+.comments ul li:first-of-type {
+  margin-top: 0;
+}
+.comments ul li:last-of-type {
+  margin-bottom: 0;
 }
 
 footer {

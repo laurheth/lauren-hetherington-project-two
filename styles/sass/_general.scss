@@ -106,6 +106,14 @@ img {
     box-shadow: $shadow-size $shadow-size $secondary-color;
 }
 
+.double-shadow {
+    box-shadow: -$shadow-size $shadow-size $secondary-color, $shadow-size $shadow-size $secondary-color;
+}
+
+.double-shadow-dark {
+    box-shadow: -$shadow-size $shadow-size $secondary-background, $shadow-size $shadow-size $secondary-background;
+}
+
 .flex-row, .flex-column {
     display: flex;
     flex-wrap: wrap;
@@ -138,4 +146,8 @@ img {
 .light-button {
     background: $light-button-color;
     color: $black;
+}
+
+main {
+    position: relative;
 }
