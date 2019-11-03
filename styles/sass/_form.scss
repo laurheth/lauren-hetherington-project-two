@@ -1,0 +1,38 @@
+// styling shared between forms
+
+$form-padding-big: 40px;
+$form-padding-small: 25px;
+$form-vertical-margin: 40px;
+$form-horizontal-margin: 50px;
+$form-border: 2px;
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    input[type='text'],
+    input[type='email'] {
+        border: none;
+        border-bottom: $form-border solid $secondary-color;
+        background: inherit;
+        width: calc(50% - #{$form-horizontal-margin/2});
+        padding: $form-padding-small $form-padding-big;
+    }
+    input[type='text'] {
+        margin-right: $form-horizontal-margin; //Assumes text field always comes before e-mail field!
+    }
+
+    textarea, button {
+        width: 100%;
+    }
+
+    textarea {
+        border: $form-border solid $secondary-color;
+        background: inherit;
+        resize: vertical;
+        padding: $form-padding-big;
+    }
+
+    input, textarea {
+        margin-bottom: $form-vertical-margin;
+    }
+}

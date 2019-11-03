@@ -167,7 +167,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   box-sizing: border-box;
 }
 
-.visuallyHidden:not(:focus):not(:active) {
+.visually-hidden:not(:focus):not(:active) {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -225,6 +225,9 @@ body {
   font-family: "Lato", sans-serif;
   background: #CCEDFB;
   color: #161515;
+}
+
+body, input, textarea {
   font-size: 20px;
   font-size: 2rem;
   line-height: 28px;
@@ -419,6 +422,34 @@ section {
   font-size: 4rem;
   letter-spacing: 4.3px;
   letter-spacing: 0.43rem;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+}
+form input[type=text],
+form input[type=email] {
+  border: none;
+  border-bottom: 2px solid #0CADC0;
+  background: inherit;
+  width: calc(50% - 25px);
+  padding: 25px 40px;
+}
+form input[type=text] {
+  margin-right: 50px;
+}
+form textarea, form button {
+  width: 100%;
+}
+form textarea {
+  border: 2px solid #0CADC0;
+  background: inherit;
+  resize: vertical;
+  padding: 40px;
+}
+form input, form textarea {
+  margin-bottom: 40px;
 }
 
 .techniques .content {
