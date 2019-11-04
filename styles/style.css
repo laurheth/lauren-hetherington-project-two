@@ -377,7 +377,7 @@ header nav ul li:last-of-type a {
 .blog-header, .contact-header {
   height: 400px;
   padding-bottom: 25vh;
-  min-height: 100px25vh;
+  min-height: calc(250px + 25vh);
 }
 
 .logo {
@@ -746,12 +746,12 @@ footer {
 }
 
 @media (max-width: 1050px) {
-  .home-header {
+  .home-header, .contact-header, .blog-header {
     height: auto;
     min-height: auto;
     padding-bottom: 80px;
   }
-  .home-header h1 {
+  .home-header h1, .contact-header h1, .blog-header h1 {
     width: auto;
     margin: 40px 0;
     font-size: 40px;
@@ -760,9 +760,17 @@ footer {
     line-height: 5rem;
   }
 
-  .overflow-header.img-container {
+  .overflow-header.img-container, article.overlap-header {
     margin-top: -60px;
+  }
+
+  .overflow-header.img-container, .blog-subset {
     width: auto;
+  }
+
+  article {
+    width: 90%;
+    min-width: auto;
   }
 
   .links h2, section.techniques h2, .links-two h2, .search h2 {

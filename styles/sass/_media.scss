@@ -1,5 +1,5 @@
 @media (max-width:1050px) {
-    .home-header {
+    .home-header, .contact-header, .blog-header {
         height: auto;
         min-height: auto;
         padding-bottom: 80px;//calc(#{$overflow-small} + 60px);
@@ -10,10 +10,19 @@
             @include line-height(50);
         }
     }
-    .overflow-header.img-container {
+    .overflow-header.img-container, article.overlap-header {
         margin-top: -60px;
+    }
+    
+    .overflow-header.img-container, .blog-subset {
         width: auto;
     }
+
+    article {
+        width: 90%;
+        min-width: auto;
+    }
+
     .links, section.techniques, .links-two, .search {
         h2 {
             @include font-size(35);
