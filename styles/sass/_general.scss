@@ -136,3 +136,14 @@ img {
 main {
     position: relative;
 }
+
+.hamburger {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    color: $white;
+    text-shadow: 0 0 2px $black;
+    @include font-size(30);
+    z-index: 10;
+}

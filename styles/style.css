@@ -318,6 +318,18 @@ main {
   position: relative;
 }
 
+.hamburger {
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  color: #FFFFFF;
+  text-shadow: 0 0 2px #1E1713;
+  font-size: 30px;
+  font-size: 3rem;
+  z-index: 10;
+}
+
 .home-header {
   background-image: url(../assets/header-home.jpg);
 }
@@ -340,8 +352,6 @@ header {
   height: 90vh;
   min-height: calc(250px + 50vh);
   padding-bottom: 50vh;
-  position: relative;
-  z-index: -20;
 }
 header .wrapper {
   height: 100%;
@@ -765,6 +775,10 @@ footer {
 @media (max-width: 800px) {
   .top-bar nav {
     display: none;
+  }
+
+  .hamburger {
+    display: block;
   }
 
   section.techniques {
