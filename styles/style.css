@@ -365,8 +365,9 @@ header nav ul li:last-of-type a {
 }
 
 .blog-header, .contact-header {
-  height: 500px;
-  padding-bottom: 200px;
+  height: 400px;
+  padding-bottom: 25vh;
+  min-height: 100px25vh;
 }
 
 .logo {
@@ -706,10 +707,8 @@ article .post p.time {
 
 address {
   font-style: normal;
-  width: 100%;
-  min-width: calc(100% - 910px);
-  max-width: 300px;
-  margin-top: 90px;
+  max-width: calc(100% - 810px);
+  align-self: center;
 }
 address i {
   color: #1A315C;

@@ -46,8 +46,9 @@ header {
 }
 
 .blog-header, .contact-header {
-    height: 500px;
-    padding-bottom: 200px;
+    height: 400px;
+    padding-bottom: $overflow-small;
+    min-height: (100px + #{$overflow-small});
 }
 
 .logo {
