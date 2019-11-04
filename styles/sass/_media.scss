@@ -1,0 +1,102 @@
+@media (max-width:1050px) {
+    .home-header {
+        height: auto;
+        min-height: auto;
+        padding-bottom: 80px;//calc(#{$overflow-small} + 60px);
+        h1 {
+            width: auto;
+            margin: 40px 0;
+            @include font-size(40);
+            @include line-height(50);
+        }
+    }
+    .overflow-header.img-container {
+        margin-top: -60px;
+        width: auto;
+    }
+    .links, section.techniques, .links-two, .search {
+        h2 {
+            @include font-size(35);
+            @include line-height(40);
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .top-bar nav {
+        display: none;
+    }
+    section.techniques {
+        padding-top: 20px;
+        .content {
+            width: auto;
+            padding-right: 0;
+        }
+        .img-container {
+            width: 100%;
+            margin-top: 40px;
+        }
+    
+        .flex-row {
+            flex-direction: column;
+        }
+    }
+
+    .gallery {
+        .flex-row {
+            flex-direction: column;
+            .img-container {
+                width: 100%;
+                margin: 40px 0;
+            }
+        }
+    }
+
+    .links-two {
+        .flex-row {
+            flex-direction: column;
+        }
+
+        .bleed-left-wrapper, .bleed-right-wrapper {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .img-container {
+            margin: 0;
+            width: 100%;
+        }
+
+        .second-row .img-container {
+            margin: 0;
+        }
+
+        .left-content, .right-content {
+            width: 100%;
+            padding: 60px 0;
+        }
+    }
+
+    .links {
+        ul {
+            flex-direction: column;
+            li {
+                width: auto;
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .links ul li {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        .icon-holder {
+            margin: 10px 0;
+        }
+    }
+    footer {
+        @include font-size(16);
+    }
+}
