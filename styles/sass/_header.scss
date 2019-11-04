@@ -19,6 +19,7 @@ header, .banner {
 header {
     padding-top: 30px;
     height: 90vh;
+    min-height: calc(250px + #{$overflow-amount});
     padding-bottom: $overflow-amount;
     position: relative;
     z-index: -20;

@@ -32,20 +32,8 @@ a {
 
 .bleed-left-wrapper, .bleed-right-wrapper {
     width: 90%;
-    max-width: calc(1280px + 10%);
+    max-width: calc(640px + 50%);
 }
-
-
-// .partial-wrapper {
-//     max-width: 810px;
-//     width: 100%;
-//     margin: 0 auto 0 0;
-// }
-
-// .blog-wrapper {
-//     max-width: 810px;
-//     // ????
-// }
 
 // half-wrapper
 .bleed-right-wrapper {
@@ -55,9 +43,6 @@ a {
 .bleed-left-wrapper {
     margin: 0 auto 0 0;
 }
-
-// font-family: 'Lato', sans-serif;
-// font-family: 'Pacifico', cursive;
 
 body {
     font-family: 'Lato', sans-serif;
