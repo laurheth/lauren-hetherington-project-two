@@ -407,6 +407,7 @@ header nav ul li:last-of-type a {
 h1 {
   margin: auto 0;
   width: 50%;
+  text-shadow: 0 0 2px #FFFFFF;
 }
 
 .home-header h1 {
