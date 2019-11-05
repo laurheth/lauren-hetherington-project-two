@@ -94,6 +94,11 @@
         .flex-row {
             flex-direction: column;
         }
+
+        h2 {
+            margin: 0 auto;
+            text-align: center;
+        }
     }
 
     .gallery {
@@ -136,6 +141,10 @@
             width: 100%;
             padding: 60px 0;
         }
+        h2 {
+            margin: 0 auto;
+            text-align: center;
+        }
     }
 
     .links {
@@ -145,6 +154,7 @@
                 width: auto;
             }
         }
+
     }
 
     article {
@@ -170,6 +180,11 @@
 
     .contact-form {
         margin: 60px 0;
+    }
+
+    .dark-button, .light-button, button {
+        margin: 0 auto;
+        text-align: center;
     }
 }
 
