@@ -745,6 +745,21 @@ footer {
   padding: 10px 0 5px 0;
 }
 
+@media (max-width: 1200px) {
+  aside.blog-sidebar {
+    position: static;
+    width: 100%;
+    max-width: 810px;
+    margin: 0 auto 60px 0;
+  }
+  aside.blog-sidebar .aside-contents {
+    padding: 20px;
+  }
+
+  .double-shadow-dark {
+    box-shadow: 20px 20px #0CADC0;
+  }
+}
 @media (max-width: 1050px) {
   .home-header, .contact-header, .blog-header {
     height: auto;
@@ -772,8 +787,16 @@ footer {
     width: 90%;
     min-width: auto;
   }
+  article .post {
+    padding-left: calc(10% * 10 / 9);
+  }
 
-  .links h2, section.techniques h2, .links-two h2, .search h2 {
+  .links h2,
+section.techniques h2,
+.links-two h2,
+.search h2,
+article .post h2,
+section.comments h2 {
     font-size: 35px;
     font-size: 3.5rem;
     line-height: 40px;
@@ -836,6 +859,16 @@ footer {
   }
   .links ul li {
     width: auto;
+  }
+
+  form input[type=text],
+form input[type=email] {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .comments ul li {
+    flex-direction: column;
   }
 }
 @media (max-width: 500px) {

@@ -1,3 +1,17 @@
+@media (max-width: 1200px) {
+    aside.blog-sidebar {
+        position: static;
+        width: 100%;
+        max-width: 810px;
+        margin: 0 auto 60px 0;
+        .aside-contents {
+            padding: 20px;
+        }
+    }
+    .double-shadow-dark {
+        box-shadow: $shadow-size $shadow-size $secondary-color;
+    }
+}
 @media (max-width:1050px) {
     .home-header, .contact-header, .blog-header {
         height: auto;
@@ -21,9 +35,17 @@
     article {
         width: 90%;
         min-width: auto;
+        .post {
+            padding-left: calc(10% * 10 / 9);
+        }
     }
 
-    .links, section.techniques, .links-two, .search {
+    .links,
+    section.techniques, 
+    .links-two,
+    .search,
+    article .post,
+    section.comments {
         h2 {
             @include font-size(35);
             @include line-height(40);
@@ -96,6 +118,16 @@
                 width: auto;
             }
         }
+    }
+
+    form input[type="text"],
+    form input[type="email"] {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .comments ul li {
+        flex-direction:column;
     }
 }
 
