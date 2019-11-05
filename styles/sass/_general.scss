@@ -111,16 +111,18 @@ img {
 }
 
 // buttons, and things that resemble buttons without actually being buttons
+$button-border: 3px;
 .dark-button, .light-button, button {
     font-family: 'Pacifico', cursive;
     font-weight: normal;
     @include font-size(27);
     @include line-height(32);
     @include letter-spacing(1.4);
-    border: none;
-    padding: 10px 40px;
+    border: $button-border solid transparent;
+    padding: (10px - $button-border) (40px - $button-border);
     display: block;
     text-transform: lowercase;
+    transition: 0.3s;
 }
 
 .dark-button {

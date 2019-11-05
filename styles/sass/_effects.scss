@@ -1,0 +1,41 @@
+a span {
+    position: relative;
+    &::before {
+        content:'';
+        position: absolute;
+        width: 0%;
+        height: 3px;
+        bottom: -4px;
+        left: 50%;
+        background: $secondary-color;
+        transition: 0.3s;
+    }
+}
+a:hover span::before,
+a:focus span::before,
+a.pre-selected span::before {
+    width: 100%;
+    left: 0;
+}
+
+.dark-button:hover,
+.dark-button:focus {
+    border-color: $white;
+    background: lighten($primary-color, 20%);
+}
+
+.light-button:hover,
+.light-button:focus {
+    border-color: $white;
+    background: darken($light-button-color, 20%);
+}
+
+// .dark-button {
+//     background: $primary-color;
+//     color: $white;
+// }
+
+// .light-button {
+//     background: $light-button-color;
+//     color: $black;
+// }

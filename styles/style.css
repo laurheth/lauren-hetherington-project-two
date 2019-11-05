@@ -298,10 +298,11 @@ img {
   line-height: 3.2rem;
   letter-spacing: 1.4px;
   letter-spacing: 0.14rem;
-  border: none;
-  padding: 10px 40px;
+  border: 3px solid transparent;
+  padding: 7px 37px;
   display: block;
   text-transform: lowercase;
+  transition: 0.3s;
 }
 
 .dark-button {
@@ -743,6 +744,39 @@ footer {
   color: #FFFFFF;
   text-align: center;
   padding: 10px 0 5px 0;
+}
+
+a span {
+  position: relative;
+}
+a span::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  bottom: -4px;
+  left: 50%;
+  background: #0CADC0;
+  transition: 0.3s;
+}
+
+a:hover span::before,
+a:focus span::before,
+a.pre-selected span::before {
+  width: 100%;
+  left: 0;
+}
+
+.dark-button:hover,
+.dark-button:focus {
+  border-color: #FFFFFF;
+  background: #305bac;
+}
+
+.light-button:hover,
+.light-button:focus {
+  border-color: #FFFFFF;
+  background: #6799f4;
 }
 
 @media (max-width: 1200px) {
