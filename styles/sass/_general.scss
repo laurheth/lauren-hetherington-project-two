@@ -20,6 +20,7 @@ li {
 }
 
 a {
+    color: inherit;
     text-decoration: none;
 }
 
@@ -87,16 +88,26 @@ img {
     box-shadow: -$shadow-size $shadow-size $secondary-color;
 }
 
+.left-shadow-offset {
+    box-shadow: (-$shadow-size - $shadow-offset) ($shadow-size + $shadow-offset) 0 (-$shadow-offset) $secondary-color;
+}
+
 .right-shadow {
     box-shadow: $shadow-size $shadow-size $secondary-color;
 }
 
+.right-shadow-offset {
+    // box-shadow: 2*$shadow-size 2*$shadow-size 0 (-$shadow-offset) $secondary-color;
+    box-shadow: ($shadow-size + $shadow-offset) ($shadow-size + $shadow-offset) 0 (-$shadow-offset) $secondary-color;
+}
+
 .double-shadow {
-    box-shadow: -$shadow-size $shadow-size $secondary-color, $shadow-size $shadow-size $secondary-color;
+    box-shadow: ($shadow-size + $shadow-offset) ($shadow-size + $shadow-offset) 0 (-$shadow-offset) $secondary-color, (-$shadow-size - $shadow-offset) ($shadow-size + $shadow-offset) 0 (-$shadow-offset) $secondary-color;
 }
 
 .double-shadow-dark {
-    box-shadow: -$shadow-size $shadow-size $secondary-background, $shadow-size $shadow-size $secondary-background;
+    //box-shadow: -$shadow-size $shadow-size $secondary-background, $shadow-size $shadow-size $secondary-background;
+    box-shadow: ($shadow-size + $shadow-offset-aside) ($shadow-size + $shadow-offset-aside) 0 (-$shadow-offset-aside) $secondary-background, (-$shadow-size - $shadow-offset-aside) ($shadow-size + $shadow-offset-aside) 0 (-$shadow-offset-aside) $secondary-background;
 }
 
 .flex-row, .flex-column {

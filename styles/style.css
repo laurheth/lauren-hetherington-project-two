@@ -199,6 +199,7 @@ li {
 }
 
 a {
+  color: inherit;
   text-decoration: none;
 }
 
@@ -266,16 +267,24 @@ img {
   box-shadow: -20px 20px #0CADC0;
 }
 
+.left-shadow-offset {
+  box-shadow: -28px 28px 0 -8px #0CADC0;
+}
+
 .right-shadow {
   box-shadow: 20px 20px #0CADC0;
 }
 
+.right-shadow-offset {
+  box-shadow: 28px 28px 0 -8px #0CADC0;
+}
+
 .double-shadow {
-  box-shadow: -20px 20px #0CADC0, 20px 20px #0CADC0;
+  box-shadow: 28px 28px 0 -8px #0CADC0, -28px 28px 0 -8px #0CADC0;
 }
 
 .double-shadow-dark {
-  box-shadow: -20px 20px #21404f, 20px 20px #21404f;
+  box-shadow: 18px 18px 0 2px #21404f, -18px 18px 0 2px #21404f;
 }
 
 .flex-row, .flex-column {
@@ -767,6 +776,15 @@ a.pre-selected span::before {
   left: 0;
 }
 
+.img-container a img {
+  transition: transform 0.3s;
+}
+
+.img-container a:hover img,
+.img-container a:focus img {
+  transform: scale(1.1);
+}
+
 .dark-button:hover,
 .dark-button:focus {
   border-color: #FFFFFF;
@@ -777,6 +795,14 @@ a.pre-selected span::before {
 .light-button:focus {
   border-color: #FFFFFF;
   background: #6799f4;
+}
+
+input[type=text], input[type=email], textarea {
+  transition: border 0.3s;
+}
+
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+  border-color: #3fe0f3;
 }
 
 @media (max-width: 1200px) {

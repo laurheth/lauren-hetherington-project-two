@@ -18,6 +18,15 @@ a.pre-selected span::before {
     left: 0;
 }
 
+.img-container a img {
+    transition: transform 0.3s;
+}
+
+.img-container a:hover img,
+.img-container a:focus img{
+    transform: scale(1.1);
+}
+
 .dark-button:hover,
 .dark-button:focus {
     border-color: $white;
@@ -30,12 +39,10 @@ a.pre-selected span::before {
     background: darken($light-button-color, 20%);
 }
 
-// .dark-button {
-//     background: $primary-color;
-//     color: $white;
-// }
+input[type='text'], input[type='email'], textarea {
+    transition: border 0.3s;
+}
 
-// .light-button {
-//     background: $light-button-color;
-//     color: $black;
-// }
+input[type='text']:focus, input[type='email']:focus, textarea:focus {
+    border-color: lighten($secondary-color,20%);
+}
