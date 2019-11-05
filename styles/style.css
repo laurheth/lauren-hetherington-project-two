@@ -759,6 +759,20 @@ footer {
   .double-shadow-dark {
     box-shadow: 20px 20px #0CADC0;
   }
+
+  .contact-flex {
+    flex-direction: column;
+  }
+  .contact-flex address {
+    display: flex;
+    max-width: 100%;
+    width: auto;
+  }
+  .contact-flex address div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 @media (max-width: 1050px) {
   .home-header, .contact-header, .blog-header {
@@ -775,7 +789,7 @@ footer {
     line-height: 5rem;
   }
 
-  .overflow-header.img-container, article.overlap-header {
+  .overflow-header.img-container, article.overlap-header, section.contact-form {
     margin-top: -60px;
   }
 
@@ -835,11 +849,17 @@ section.comments h2 {
     margin: 40px 0;
   }
 
+  .wrapper {
+    width: 100%;
+    padding: 0 20px;
+  }
+
   .links-two .flex-row {
     flex-direction: column;
   }
   .links-two .bleed-left-wrapper, .links-two .bleed-right-wrapper {
-    width: 80%;
+    width: 100%;
+    padding: 0 20px;
     margin: 0 auto;
   }
   .links-two .img-container {
@@ -861,6 +881,17 @@ section.comments h2 {
     width: auto;
   }
 
+  article {
+    width: 100%;
+  }
+  article .post {
+    padding: 40px 20px;
+  }
+
+  .blog-subset p {
+    padding-right: 0;
+  }
+
   form input[type=text],
 form input[type=email] {
     width: 100%;
@@ -869,6 +900,10 @@ form input[type=email] {
 
   .comments ul li {
     flex-direction: column;
+  }
+
+  .contact-form {
+    margin: 60px 0;
   }
 }
 @media (max-width: 500px) {
