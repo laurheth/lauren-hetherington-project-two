@@ -374,8 +374,8 @@ header nav ul li:last-of-type a {
 
 .blog-header, .contact-header {
   height: 400px;
-  padding-bottom: 25vh;
-  min-height: calc(250px + 25vh);
+  padding-bottom: 100px;
+  min-height: calc(250px + 100px);
 }
 
 .logo {
@@ -601,7 +601,7 @@ form input, form textarea {
 }
 
 article.overlap-header {
-  margin-top: -25vh;
+  margin-top: -100px;
 }
 
 .blog-subset {
@@ -708,7 +708,7 @@ article .post p.time {
   max-width: 810px;
   margin-left: 0;
   background: #21404f;
-  margin: -25vh -30px 120px -30px;
+  margin: -100px -30px 120px -30px;
   padding: 30px;
   flex-shrink: 0;
 }
@@ -736,11 +736,19 @@ address div {
   justify-content: space-between;
 }
 
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 footer {
   background: #1E1713;
   color: #FFFFFF;
   text-align: center;
   padding: 10px 0 5px 0;
+  margin-top: auto;
 }
 
 a span {
