@@ -328,18 +328,6 @@ main {
   position: relative;
 }
 
-.hamburger {
-  display: none;
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  color: #FFFFFF;
-  text-shadow: 0 0 2px #1E1713;
-  font-size: 30px;
-  font-size: 3rem;
-  z-index: 10;
-}
-
 .home-header {
   background-image: url(../assets/header-home.jpg);
 }
@@ -805,6 +793,70 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
   border-color: #3fe0f3;
 }
 
+a i {
+  transition: 0.3s;
+}
+
+a:hover i,
+a:focus i {
+  color: #305bac;
+  transform: scale(1.1);
+}
+
+.hamburger-container {
+  position: fixed;
+  z-index: 20;
+  padding: 18px;
+  top: 11px;
+  right: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0 0 0 1px #1E1713);
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  display: none;
+  height: 3px;
+  width: 20px;
+  border-radius: 3px;
+  background: #FFFFFF;
+  z-index: 10;
+  transition: 0.3s;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  position: absolute;
+  right: 0;
+}
+
+.hamburger {
+  position: relative;
+}
+
+.hamburger::before {
+  top: -6px;
+}
+
+.hamburger::after {
+  top: 6px;
+}
+
+.hamburger-container:hover .hamburger {
+  transform: rotate(45deg);
+}
+
+.hamburger-container:hover .hamburger::before,
+.hamburger-container:hover .hamburger::after {
+  transform: rotate(-90deg);
+  top: 0;
+  right: 0;
+}
+
 @media (max-width: 1200px) {
   aside.blog-sidebar {
     position: static;
@@ -882,7 +934,7 @@ section.comments h2 {
     display: none;
   }
 
-  .hamburger {
+  .hamburger, .hamburger::after, .hamburger::before {
     display: block;
   }
 

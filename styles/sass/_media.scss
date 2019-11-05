@@ -71,7 +71,7 @@
     .top-bar nav {
         display: none;
     }
-    .hamburger {
+    .hamburger, .hamburger::after, .hamburger::before {
         display: block;
     }
     section.techniques {

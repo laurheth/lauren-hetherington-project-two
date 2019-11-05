@@ -46,3 +46,13 @@ input[type='text'], input[type='email'], textarea {
 input[type='text']:focus, input[type='email']:focus, textarea:focus {
     border-color: lighten($secondary-color,20%);
 }
+
+a i {
+    transition: 0.3s;
+}
+
+a:hover i,
+a:focus i {
+    color: lighten($primary-color, 20%);
+    transform: scale(1.1);
+}
