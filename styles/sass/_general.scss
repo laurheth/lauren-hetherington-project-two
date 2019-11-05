@@ -45,6 +45,7 @@ a {
     margin: 0 auto 0 0;
 }
 
+// Body fonts
 body {
     font-family: 'Lato', sans-serif;
     background: $primary-background;
@@ -57,7 +58,6 @@ body, input, textarea {
     @include line-height(28);
     @include letter-spacing(2);
 }
-
 
 
 nav {
@@ -83,6 +83,8 @@ img {
 .bleed-left img {
     object-position:left;
 }
+
+// Box shadow shenanigans
 
 .left-shadow {
     box-shadow: -$shadow-size $shadow-size $secondary-color;

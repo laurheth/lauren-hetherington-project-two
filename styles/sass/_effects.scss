@@ -1,3 +1,4 @@
+// Underline when hovering on many text links
 a span {
     position: relative;
     &::before {
@@ -18,15 +19,17 @@ a.pre-selected span::before {
     left: 0;
 }
 
+// Slightly scale up images within anchors.
 .img-container a img {
     transition: transform 0.3s;
 }
 
 .img-container a:hover img,
 .img-container a:focus img{
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
+// Button hover effects
 .dark-button:hover,
 .dark-button:focus {
     border-color: $white;
@@ -39,6 +42,7 @@ a.pre-selected span::before {
     background: darken($light-button-color, 20%);
 }
 
+// Slightly brighten input borders
 input[type='text'], input[type='email'], textarea {
     transition: border 0.3s;
 }
@@ -47,6 +51,7 @@ input[type='text']:focus, input[type='email']:focus, textarea:focus {
     border-color: lighten($secondary-color,20%);
 }
 
+// Slightly lighten and enlargen social icons
 a i {
     transition: 0.3s;
 }

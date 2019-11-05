@@ -1,4 +1,4 @@
-
+// header images
 .home-header {
     background-image: url(../assets/header-home.jpg);
 }
@@ -16,6 +16,7 @@ header, .banner {
     background-size: cover;
 }
 
+// general header styles
 header {
     padding-top: 30px;
     height: 90vh;
@@ -43,12 +44,14 @@ header {
     }
 }
 
+// less intense overlap on blog and contact
 .blog-header, .contact-header {
     height: 400px;
     padding-bottom: $overflow-small;
     min-height: calc(250px + #{$overflow-small});
 }
 
+// logo style
 .logo {
     @include font-size(30);
     @include line-height(24);
@@ -71,8 +74,8 @@ h1 {
     @include line-height(64);
 }
 
+// The image that overlaps the header on index
 .overflow-header.img-container {
-    // position: absolute;
     margin-top: -$overflow-amount;
     width: 60%;
 }

@@ -15,18 +15,21 @@
         <div class="wrapper">
             <div class="top-bar">
                 <h2 class='logo'><a href="index.html"><span>Textilee</span></a></h2>
-                <div class="hamburger-container">
-                    <div class="hamburger">
+                <label class="hamburger-label" for="hamburger-toggle">
+                    <input type="checkbox" name="hamburger-toggle" id="hamburger-toggle" class="hamburger-toggle" autocomplete=off aria-hidden=true>
+                    <div class="hamburger-container">
+                        <div class="hamburger">
+                        </div>
                     </div>
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="#" class="pre-selected"><span>Home</span></a></li>
-                        <li><a href="#about"><span>About</span></a></li>
-                        <li><a href="blog.html"><span>Blog</span></a></li>
-                        <li><a href="contact.html"><span>Contact</span></a></li>
-                    </ul>
-                </nav>
+                    <nav>
+                        <ul>
+                            <li><a href="index.html" class="pre-selected"><span>Home</span></a></li>
+                            <li><a href="index.html#about"><span>About</span></a></li>
+                            <li><a href="blog.html"><span>Blog</span></a></li>
+                            <li><a href="contact.html"><span>Contact</span></a></li>
+                        </ul>
+                    </nav>
+                </label>
             </div>
             <!-- This seemes like an h1 since this is what changes with each page? -->
             <h1>Textiles for all projects in mind</h1>
@@ -78,7 +81,7 @@
                 <ul class='flex-row'>
                     <li>
                         <div class="icon-holder">
-                            <i class="fas fa-calendar-check"></i>
+                            <i  aria-hidden=true class="fas fa-calendar-check"></i>
                         </div>
                         <div>
                             <h2>
@@ -93,7 +96,7 @@
                     </li>
                     <li>
                         <div class="icon-holder">
-                            <i class="fas fa-users"></i>
+                            <i aria-hidden=true class="fas fa-users"></i>
                         </div>
                         <div>
                             <h2>
@@ -108,7 +111,7 @@
                     </li>
                     <li>
                         <div class="icon-holder">
-                            <i class="fas fa-file"></i>
+                            <i aria-hidden=true class="fas fa-file"></i>
                         </div>
                         <div>
                             <h2>
@@ -123,7 +126,7 @@
                     </li>
                     <li>
                         <div class="icon-holder">
-                            <i class="fas fa-phone"></i>
+                            <i aria-hidden=true class="fas fa-phone"></i>
                         </div>
                         <div>
                             <h2>

@@ -1,4 +1,6 @@
 @media (max-width: 1200px) {
+
+    // Aside side-bar, no longer positioned side by side with the blog.
     aside.blog-sidebar {
         position: static;
         width: 100%;
@@ -8,10 +10,13 @@
             padding: 20px;
         }
     }
+
+    // double shadow to single shadow (this is only on the aside, above. Looks better this way.)
     .double-shadow-dark {
         box-shadow: $shadow-size $shadow-size $secondary-color;
     }
 
+    // Make contact section into a column; move address below the form
     .contact-flex {
         flex-direction: column;
         address {
@@ -26,11 +31,14 @@
         }
     }
 }
+
 @media (max-width:1050px) {
+
+    // Header sizing changed to look better.
     .home-header, .contact-header, .blog-header {
         height: auto;
         min-height: auto;
-        padding-bottom: 80px;//calc(#{$overflow-small} + 60px);
+        padding-bottom: 80px;
         h1 {
             width: auto;
             margin: 40px 0;
@@ -46,6 +54,7 @@
         width: auto;
     }
 
+    // Widen blog post.
     article {
         width: 90%;
         min-width: auto;
@@ -54,6 +63,7 @@
         }
     }
 
+    // Reduce font size for headers.
     .links,
     section.techniques, 
     .links-two,
@@ -68,12 +78,8 @@
 }
 
 @media (max-width: 800px) {
-    .top-bar nav {
-        display: none;
-    }
-    .hamburger, .hamburger::after, .hamburger::before {
-        display: block;
-    }
+    // Change most things into a column and widen them overall.
+
     section.techniques {
         padding-top: 20px;
         .content {
@@ -167,6 +173,7 @@
     }
 }
 
+// Make the links into a column as well.
 @media (max-width: 500px) {
     .links ul li {
         flex-direction: column;

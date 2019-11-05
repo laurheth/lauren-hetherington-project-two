@@ -1,14 +1,42 @@
+// Normalize
 @import 'normalize';
+
+// General variable storage
 @import 'variables';
+
+// Mixins
 @import 'mixins';
+
+// Generally applicable things i.e. stripping styles, commonly used classes
 @import 'general';
+
+// Styling for headers
 @import 'header';
+
+// Generally applicable things pertaining to sections
+// Includes starting h2 styles
 @import 'sections';
+
+// Form styling
 @import 'form';
+
+// Styling for sections in index.html
 @import 'index';
+
+//Styling for sections in blog.html
 @import 'blog';
+
+// Styling for sections in contact.html
 @import 'contact';
+
+// Footer styling
 @import 'footer';
+
+// Effects for hover and focus on most things. Excludes hamburger menu.
 @import 'effects';
+
+// Hamburger menu styling, including its media query.
 @import 'hamburger';
+
+// All other media queries
 @import 'media';

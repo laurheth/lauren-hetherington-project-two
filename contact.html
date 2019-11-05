@@ -15,18 +15,21 @@
         <div class="wrapper">
             <div class="top-bar">
                 <h2 class='logo'><a href="index.html"><span>Textilee</span></a></h2>
-                <div class="hamburger-container">
+                <label class="hamburger-label" for="hamburger-toggle">
+                    <input type="checkbox" name="hamburger-toggle" id="hamburger-toggle" class="hamburger-toggle" autocomplete=off aria-hidden=true>
+                    <div class="hamburger-container">
                         <div class="hamburger">
                         </div>
                     </div>
-                <nav>
-                    <ul>
+                    <nav>
+                        <ul>
                             <li><a href="index.html"><span>Home</span></a></li>
                             <li><a href="index.html#about"><span>About</span></a></li>
                             <li><a href="blog.html"><span>Blog</span></a></li>
-                            <li><a href="#" class="pre-selected"><span>Contact</span></a></li>
-                    </ul>
-                </nav>
+                            <li><a href="contact.html" class="pre-selected"><span>Contact</span></a></li>
+                        </ul>
+                    </nav>
+                </label>
             </div>
             <!-- This seemes like an h1 since this is what changes with each page? -->
             <h1>Get in touch</h1>
@@ -54,16 +57,20 @@
                 <address>
                     <div>
                         <a href="#">
-                            <i class="fab fa-facebook-f"></i>
+                            <i aria-hidden=true class="fab fa-facebook-f"></i>
+                            <span class="visually-hidden">Textilee's facebook page.</span>
                         </a>
                         <a href="#">
-                            <i class="fab fa-instagram"></i> 
+                            <i aria-hidden=true class="fab fa-instagram"></i> 
+                            <span class="visually-hidden">Textilee's instagram.</span>
                         </a>
                         <a href="#">
-                            <i class="fab fa-twitter"></i>
+                            <i aria-hidden=true class="fab fa-twitter"></i>
+                            <span class="visually-hidden">Textilee's twitter.</span>
                         </a>
                         <a href="#">
-                            <i class="fab fa-whatsapp"></i>
+                            <i aria-hidden=true class="fab fa-whatsapp"></i>
+                            <span class="visually-hidden">Textilee's whatsapp.</span>
                         </a>
                     </div>
                     <div>

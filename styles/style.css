@@ -778,7 +778,7 @@ a.pre-selected span::before {
 
 .img-container a:hover img,
 .img-container a:focus img {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .dark-button:hover,
@@ -811,16 +811,21 @@ a:focus i {
   transform: scale(1.1);
 }
 
+.hamburger-toggle {
+  display: none;
+}
+
 .hamburger-container {
   position: fixed;
   z-index: 20;
-  padding: 18px;
-  top: 11px;
-  right: 11px;
+  width: 25px;
+  height: 25px;
+  top: 20px;
+  right: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  filter: drop-shadow(0 0 0 1px #1E1713);
+  filter: drop-shadow(0 0 1px #1E1713);
 }
 
 .hamburger,
@@ -828,7 +833,7 @@ a:focus i {
 .hamburger::after {
   display: none;
   height: 3px;
-  width: 20px;
+  width: 25px;
   border-radius: 3px;
   background: #FFFFFF;
   z-index: 10;
@@ -847,24 +852,59 @@ a:focus i {
 }
 
 .hamburger::before {
-  top: -6px;
+  top: -8px;
 }
 
 .hamburger::after {
-  top: 6px;
+  top: 8px;
 }
 
-.hamburger-container:hover .hamburger {
+.hamburger-toggle:checked ~ .hamburger-container .hamburger,
+.hamburger-label:focus-within .hamburger {
   transform: rotate(45deg);
 }
 
-.hamburger-container:hover .hamburger::before,
-.hamburger-container:hover .hamburger::after {
+.hamburger-toggle:checked ~ .hamburger-container .hamburger::before,
+.hamburger-toggle:checked ~ .hamburger-container .hamburger::after,
+.hamburger-label:focus-within .hamburger::before,
+.hamburger-label:focus-within .hamburger::after {
   transform: rotate(-90deg);
   top: 0;
   right: 0;
 }
 
+@media (max-width: 800px) {
+  .top-bar nav {
+    position: fixed;
+    right: 0;
+    transform: translate(100%);
+    top: 0;
+    padding: 40px 0;
+    background: #21404f;
+    border: 4px solid #0CADC0;
+    z-index: 5;
+    transition: 0.3s;
+  }
+  .top-bar nav ul {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .top-bar nav ul li a, .top-bar nav ul li:last-of-type a {
+    display: block;
+    color: #FFFFFF;
+    padding: 5px 30px;
+  }
+
+  .hamburger-toggle:checked ~ nav,
+.hamburger-label:focus-within nav {
+    transform: translateX(0);
+  }
+
+  .hamburger, .hamburger::after, .hamburger::before {
+    display: block;
+  }
+}
 @media (max-width: 1200px) {
   aside.blog-sidebar {
     position: static;
@@ -938,14 +978,6 @@ section.comments h2 {
   }
 }
 @media (max-width: 800px) {
-  .top-bar nav {
-    display: none;
-  }
-
-  .hamburger, .hamburger::after, .hamburger::before {
-    display: block;
-  }
-
   section.techniques {
     padding-top: 20px;
   }

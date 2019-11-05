@@ -1,31 +1,42 @@
 $hamburger-thickness: 3px;
-$hamburger-spacing: 6px;
-$hamburger-width: 20px;
+$hamburger-spacing: 8px;
+$hamburger-width: 25px;
+$hamburger-position: 20px;
 
+// Hamburger toggle starts hidden
+.hamburger-toggle {
+    display: none;
+}
+
+// This holds the hamburger and is what actually gets clicked
 .hamburger-container {
     position: fixed;
     z-index: 20;
-    padding: (2*$hamburger-thickness + 2*$hamburger-spacing);
-    top: 20px - $hamburger-thickness - $hamburger-spacing;
-    right: 20px - $hamburger-thickness - $hamburger-spacing;
+    width: $hamburger-width;
+    height: 3*$hamburger-thickness + 2*$hamburger-spacing;
+    top: $hamburger-position;
+    right: $hamburger-position;
     display: flex;
     align-items: center;
     justify-content: center;
-    filter: drop-shadow(0 0 0 1px $black);
+    // Add an outline
+    filter: drop-shadow(0 0 1px $black);
 }
 
+// Shape of the hamburger layers
 .hamburger,
 .hamburger::before,
 .hamburger::after {
     display: none;
     height: $hamburger-thickness;
-    width: 20px;
+    width: $hamburger-width;
     border-radius: $hamburger-thickness;
     background: $white;
     z-index: 10;
     transition: 0.3s;
 }
 
+// top and bottom layer positioned relative to the meat.
 .hamburger::before,
 .hamburger::after {
     content: '';
@@ -33,6 +44,7 @@ $hamburger-width: 20px;
     right:0;
 }
 
+// The meat! Is! Relative!
 .hamburger {
     position: relative;
 }
@@ -45,13 +57,53 @@ $hamburger-width: 20px;
     top: $hamburger-spacing;
 }
 
-.hamburger-container:hover .hamburger {
+// Rotate the meat!
+.hamburger-toggle:checked ~ .hamburger-container .hamburger,
+.hamburger-label:focus-within .hamburger {
     transform: rotate(45deg);
 }
 
-.hamburger-container:hover .hamburger::before,
-.hamburger-container:hover .hamburger::after {
+// Anti-rotate the bun!
+.hamburger-toggle:checked ~ .hamburger-container .hamburger::before,
+.hamburger-toggle:checked ~ .hamburger-container .hamburger::after,
+.hamburger-label:focus-within .hamburger::before,
+.hamburger-label:focus-within .hamburger::after {
     transform: rotate(-90deg);
     top: 0;
     right: 0;
+}
+
+@media (max-width: 800px) {
+    // apply hamburger menu styles
+    .top-bar nav {
+        position: fixed;
+        right: 0;
+
+        transform: translate(100%);
+        top: 0;
+        padding: 40px 0;
+        background: $secondary-background;
+        border: 4px solid $secondary-color;
+        z-index: 5;
+        transition: 0.3s;
+        ul {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            li a, li:last-of-type a {
+                display: block;
+                color: $white;
+                padding: 5px 30px;
+            }
+        }
+    }
+
+    .hamburger-toggle:checked ~ nav,
+    .hamburger-label:focus-within nav {
+        transform: translateX(0);
+    }
+
+    .hamburger, .hamburger::after, .hamburger::before {
+        display: block;
+    }
 }
